@@ -1,0 +1,28 @@
+###
+POST http://localhost:9000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Monkey D' Luffy",
+    "age": "19",
+    "email": "luffy@pirate.muwi"
+}
+
+###
+GET http://localhost:9000/api/users HTTP/1.1
+
+###
+GET http://localhost:9000/api/users/65554c96dc10ad964c7d16a7 HTTP/1.1
+
+###
+PUT  http://localhost:9000/api/users/65554c96dc10ad964c7d16a7 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Monkey D' Luffy",
+    "age": "19",
+    "email": "luffy@muwigara.pr"
+}
+
+###
+DELETE http://localhost:9000/api/users/65553d6699a8f7e934e926e6 HTTP/1.1
